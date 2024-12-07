@@ -36,7 +36,7 @@ With a `user.js` file, you don't need to set up everything manually. Simply plac
 
 3. Paste the downloaded `user.js` file into the folder.
 
-   <img src="https://i.ibb.co/z8Xkygr/aboutprofiles.png" alt="user.js in File explorer">
+   <img src="https://i.ibb.co/vJvmfm6/ckv-OW4w4o-U.png" alt="user.js in File explorer">
 
 4. Restart Firefox (Just close and open it again), and it should look like this:
 

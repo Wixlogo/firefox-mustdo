@@ -25,7 +25,7 @@ flatpak install flathub org.mozilla.firefox
 ## Setting everything up with User.js
 With a `user.js` file, you don't need to set up everything manually. Simply place the `user.js` file containing your settings into the Firefox root directory, restart Firefox, and all configurations will be applied automatically.
 
-[Betterfox](https://github.com/yokoffing/Betterfox) is one of the most popular and well-configured `user.js` files. I recommend using my modified version of Betterfox.
+[Betterfox](https://github.com/yokoffing/Betterfox) is one of the most popular and well-configured `user.js` files. I recommend using my modified user.js file, as it is built upon the solid Betterfox foundation, offering additional tweaks such as improved font rendering on Windows, HTTPS-Only mode, disabled WebRTC, and more.
 
 ### Steps
 1. Download the `user.js` file from [here](https://raw.githubusercontent.com/Wixlogo/firefox-mustdo/refs/heads/main/user.js) (Right click > `Save Link As…`).

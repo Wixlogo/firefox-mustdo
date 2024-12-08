@@ -25,10 +25,32 @@ flatpak install flathub org.mozilla.firefox
 ## Setting everything up with User.js
 With a `user.js` file, you don't need to set up everything manually. Simply place the `user.js` file containing your settings into the Firefox root directory, restart Firefox, and all configurations will be applied automatically.
 
-[Betterfox](https://github.com/yokoffing/Betterfox) is one of the most popular and well-configured `user.js` files. I recommend using my modified user.js file, as it is built upon the solid Betterfox foundation, offering additional tweaks such as improved font rendering on Windows, HTTPS-Only mode, disabled WebRTC, and more.
+[Betterfox](https://github.com/yokoffing/Betterfox) is one of the most popular and well-configured `user.js` files. I recommend using my modified `user.js` file, as it is built upon the solid Betterfox foundation, offering additional [tweaks](https://github.com/yokoffing/Betterfox/wiki/Common-Overrides) and [hardening](https://github.com/yokoffing/Betterfox/wiki/Optional-Hardening) which include:  
+
+| **Description**                                 | **Preference**                                      | **Reason**                                                                 |
+|-------------------------------------------------|---------------------------------------------------|---------------------------------------------------------------------------|
+| Match OS theme                                  | `layout.css.prefers-color-scheme.content-override`, `2` | Ensures websites follow the browser's theme setting (dark or light) based on OS preferences. |
+| Improve font rendering using [DirectWrite](https://learn.microsoft.com/en-us/windows/win32/directwrite/direct-write-portal) | `gfx.font_rendering.cleartype_params.rendering_mode`, `5`<br>`gfx.font_rendering.cleartype_params.cleartype_level`, `100`<br>`gfx.font_rendering.cleartype_params.force_gdi_classic_for_families`, `""`<br>`gfx.font_rendering.directwrite.use_gdi_table_loading`, `false` | Makes text sharper and visually pleasing on Windows. |
+| Restore search engine suggestions               | `browser.search.suggest.enabled`, `true`          | Improves usability by showing search suggestions directly in the search bar. |
+| Disable Firefox Sync                            | `identity.fxaccounts.enabled`, `false`            | Prevents syncing personal data like bookmarks and history across devices for enhanced privacy. |
+| Disable Firefox View tour popup                 | `browser.firefox-view.feature-tour`, `{"screen":"","complete":true}` | Avoids unnecessary distractions by skipping the feature tour.             |
+| Disable login manager                           | `signon.rememberSignons`, `false`                 | Stops Firefox from saving passwords to ensure data isn't stored locally. Use any external password manager. |
+| Disable address autofill                        | `extensions.formautofill.addresses.enabled`, `false` | Reduces the risk of sharing sensitive personal information automatically. |
+| Disable credit card autofill                    | `extensions.formautofill.creditCards.enabled`, `false` | Prevents autofill for sensitive financial information for better security. |
+| Enable HTTPS-Only Mode                          | `dom.security.https_only_mode`, `true`            | Ensures secure connections by default, protecting against HTTP risks.     |
+| Warn on loading HTTP sites                      | `dom.security.https_only_mode_error_page_user_suggestions`, `true` | Provides a warning before visiting potentially insecure sites.            |
+| Set DNS-over-HTTPS (DoH) provider to [Mullvad](https://mullvad.net/en/help/dns-over-https-and-dns-over-tls/) | `network.trr.uri`, `https://base.dns.mullvad.net/dns-query` | Routes DNS queries securely via [Mullvad](https://mullvad.net/en/help/dns-over-https-and-dns-over-tls/) for improved privacy. |
+| Enforce DNS-over-HTTPS                          | `network.trr.mode`, `3`                           | Guarantees encrypted DNS queries for better security and anonymity.       |
+| Ask where to save every file                    | `browser.download.useDownloadDir`, `false`        | Gives users control over storage location and prevents accidental downloads of malicious or unintended files. |
+| Enable smooth scrolling                         | `general.smoothScroll`, `true`<br>`general.smoothScroll.pages`, `true` | Enhances browsing experience with fluid page navigation.                  |
+| Disable WebRTC to prevent IP leaks              | `media.peerconnection.enabled`, `false`           | Prevents IP address leaks, as WebRTC can expose your IP even while using a VPN. |
+| Set homepage to blank                           | `browser.startup.homepage`, `about:blank`         | Provides a clean, minimal browsing experience with a blank homepage.      |
+| Disable new tab page                            | `browser.newtabpage.enabled`, `false`<br>`browser.newtab.preload`, `false` | Ensures a clean and distraction-free new tab experience.                  |
+| Disable sidebar                                 | `sidebar.revamp`, `false`                         | Restores the traditional browser layout. |
+
 
 ### Steps
-1. Download the `user.js` file from [here](https://raw.githubusercontent.com/Wixlogo/firefox-mustdo/refs/heads/main/user.js) (Right click > `Save Link As…`).
+1. Download the `user.js` file from [here](https://raw.githubusercontent.com/Wixlogo/firefox-mustdo/refs/heads/main/user.js) (Right click > `Save Page As…`).
 
 2. Go to `about:profiles` in Firefox. Under **Root Directory**, click `Open Folder`.
 
@@ -77,8 +99,8 @@ Here are some must-have add-ons to enhance your Firefox experience:
   Automatically deletes unused cookies and other site data unless you whitelist specific sites.  
   Alternative: **[Temporary Containers](https://addons.mozilla.org/en-US/firefox/addon/temporary-containers/)**.
 
-- **[Windscribe VPN](https://windscribe.com/yo/40sycx18)**  
-  A VPN service with 10GB/month on the free plan. _(Note: This link is my referral link.)_
+- **[Windscribe VPN](https://addons.mozilla.org/en-US/firefox/addon/windscribe/)**  
+  A pretty good no-logs VPN with free 2GB/month if you enter your email and 10GB/month if you verify your email. [My referral link](https://windscribe.com/yo/40sycx18).
 
 - **[Bitwarden](https://addons.mozilla.org/en-US/firefox/addon/bitwarden-password-manager/)**  
   A free, cross-platform password manager.

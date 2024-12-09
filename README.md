@@ -1,26 +1,63 @@
 # Enhance Your Firefox Experience 🔥🦊
 Essential tweaks, settings, and tools to optimize Firefox for usability, privacy, and customization.
+> Note: This setup prioritizes usability and convenience while maintaining privacy. 
+> For maximum privacy or anonymity, consider [Mulvad Browser](https://mullvad.net/en/browser) or the [Tor Browser](https://www.torproject.org/).  
+> A well-configured Firefox `<` dedicated privacy Firefox folks in *terms of privacy*.
 ## Install Firefox
 Visit the [Firefox Website](https://www.mozilla.org/en-US/firefox/new/) and hit the big blue download button.
 
 ### Using CLI (Recommended)
 #### Windows
-If you're on Windows, you can use [Winget](https://apps.microsoft.com/detail/9nblggh4nns1?hl=en-us&gl=IN):
-```bash
-winget install Mozilla.Firefox
-```
+If you're on Windows, you can choose from multiple package managers:
 
+1. **[Winget](https://apps.microsoft.com/detail/9nblggh4nns1?hl=en-us&gl=IN)** (Pre-installed on Windows 10/11):  
+   ```bash
+   winget install Mozilla.Firefox
+   ```
+
+2. **[Scoop](https://scoop.sh/)**:  
+   ```bash
+   scoop install firefox
+   ```
+
+3. **[Chocolatey](https://chocolatey.org/)**:  
+   ```bash
+   choco install firefox
+   ```
+   
 #### Mac OS
-On mac you can install Firefox using [Homebrew](https://brew.sh/):
+Install Firefox using [Homebrew](https://brew.sh/):
 ```bash 
 brew install --cask firefox
 ```
 
 #### Linux
-Firefox might already be preinstalled on your Linux distro. It's also available as a [Flatpak package](https://flathub.org/apps/org.mozilla.firefox):
-```bash 
-flatpak install flathub org.mozilla.firefox
-```
+Firefox might already be preinstalled on your Linux distro. If not, run these commands according to your linux distro:
+
+1. **Debian/Ubuntu-based distributions**:  
+   ```bash
+   sudo apt install firefox
+   ```
+
+2. **Fedora/Red Hat-based distributions**:  
+   ```bash
+   sudo dnf install firefox
+   ```
+
+3. **Manjaro/Arch-based distributions**:  
+   ```bash
+   sudo pacman -S firefox
+   ```
+
+4. **Flatpak (Universal Package Manager)**:   
+   ```bash
+   flatpak install flathub org.mozilla.firefox
+   ```
+
+  > **Note:** Firefox native packages (from your distro's repository) tend to be faster and more stable compared to Flatpak. However, Flatpak applications include sandboxing and isolation with the OS out of the box, offering additional security.  
+>  
+> For optimal protection even with native packages, I highly recommend taking the time to learn and configure [AppArmor](https://ubuntu.com/security/apparmor) or [SELinux](https://selinuxproject.org/page/Main_Page) based on your Linux distribution.  
+> Properly configuring a Mandatory Access Control (MAC) system can provide robust protection even for native packages by limiting application privileges and preventing unauthorized access.
 
 ## Setting everything up with User.js
 With a `user.js` file, you don't need to set up everything manually. Simply place the `user.js` file containing your settings into the Firefox root directory, restart Firefox, and all configurations will be applied automatically.

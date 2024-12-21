@@ -84,6 +84,8 @@ With a `user.js` file, you don't need to set up everything manually. Simply plac
 | Set homepage to blank                           | `browser.startup.homepage`, `about:blank`         | Provides a clean, minimal browsing experience with a blank homepage.      |
 | Disable new tab page                            | `browser.newtabpage.enabled`, `false`<br>`browser.newtab.preload`, `false` | Ensures a clean and distraction-free new tab experience.                  |
 | Disable sidebar                                 | `sidebar.revamp`, `false`                         | Restores the traditional browser layout. |
+| Double-click to close browser tabs              | `browser.tabs.closeTabByDblclick`, `true`          | Lets you close a tab by double-clicking on it, similar to Edge and some browsers. |
+
 
 
 ### Steps

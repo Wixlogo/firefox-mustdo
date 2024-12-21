@@ -254,6 +254,9 @@ user_pref("browser.newtab.preload", false);
 // PREF: disable sidebar
 user_pref("sidebar.revamp", false);
 
+// PREF: double-click to close browser tabs
+user_pref("browser.tabs.closeTabByDblclick", true);
+
 // ****************************************************************************
 
 // Thanks to yokoffing for Betterfox!

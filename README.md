@@ -85,6 +85,7 @@ With a `user.js` file, you don't need to set up everything manually. Simply plac
 | Disable new tab page                            | `browser.newtabpage.enabled`, `false`<br>`browser.newtab.preload`, `false` | Ensures a clean and distraction-free new tab experience.                  |
 | Disable sidebar                                 | `sidebar.revamp`, `false`                         | Restores the traditional browser layout. |
 | Double-click to close browser tabs              | `browser.tabs.closeTabByDblclick`, `true`          | Lets you close a tab by double-clicking on it, similar to Edge and some browsers. |
+| Disable Web Search on Firefox Home              | `browser.newtabpage.activity-stream.showSearch`, `false` | Removes the web search bar from the Firefox Home tab for Blank Tab. |
 
 ### Steps
 1. Download the `user.js` file from [here](https://raw.githubusercontent.com/Wixlogo/firefox-mustdo/refs/heads/main/user.js) (Right click > `Save Page As…`).

@@ -64,6 +64,7 @@ With a `user.js` file, you don't need to set up everything manually. Simply plac
 
 [Betterfox](https://github.com/yokoffing/Betterfox) is one of the most popular and well-configured `user.js` files. I recommend using my modified `user.js` file, as it is built upon the solid Betterfox foundation, offering additional [tweaks](https://github.com/yokoffing/Betterfox/wiki/Common-Overrides) and [hardening](https://github.com/yokoffing/Betterfox/wiki/Optional-Hardening) which include:  
 
+
 | **Description**                                 | **Preference**                                      | **Reason**                                                                 |
 |-------------------------------------------------|---------------------------------------------------|---------------------------------------------------------------------------|
 | Match OS theme                                  | `layout.css.prefers-color-scheme.content-override`, `2` | Ensures websites follow the browser's theme setting (dark or light) based on OS preferences. |
@@ -81,12 +82,9 @@ With a `user.js` file, you don't need to set up everything manually. Simply plac
 | Ask where to save every file                    | `browser.download.useDownloadDir`, `false`        | Gives users control over storage location and prevents accidental downloads of malicious or unintended files. |
 | Enable smooth scrolling                         | `general.smoothScroll`, `true`<br>`general.smoothScroll.pages`, `true` | Enhances browsing experience with fluid page navigation.                  |
 | Disable WebRTC to prevent IP leaks              | `media.peerconnection.enabled`, `false`           | Prevents IP address leaks, as WebRTC can expose your IP even while using a VPN. |
-| Set homepage to blank                           | `browser.startup.homepage`, `about:blank`         | Provides a clean, minimal browsing experience with a blank homepage.      |
 | Disable new tab page                            | `browser.newtabpage.enabled`, `false`<br>`browser.newtab.preload`, `false` | Ensures a clean and distraction-free new tab experience.                  |
 | Disable sidebar                                 | `sidebar.revamp`, `false`                         | Restores the traditional browser layout. |
 | Double-click to close browser tabs              | `browser.tabs.closeTabByDblclick`, `true`          | Lets you close a tab by double-clicking on it, similar to Edge and some browsers. |
-
-
 
 ### Steps
 1. Download the `user.js` file from [here](https://raw.githubusercontent.com/Wixlogo/firefox-mustdo/refs/heads/main/user.js) (Right click > `Save Page As…`).

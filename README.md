@@ -109,7 +109,7 @@ With a `user.js` file, you don't need to set up everything manually. Simply plac
 [![CUstomize Firefox]()](https://github.com/user-attachments/assets/1dc68124-dbd9-4a92-9e28-7961ec32ed10)  
 
 - [Black by XI](https://addons.mozilla.org/en-GB/firefox/addon/black21/) is my favorite theme. It offers a pure black design.  
-  <img src="https://i.ibb.co/wWN3r0q/Ntt-CJBKMQf.png" alt="Black Theme" width="800">
+  <img src="https://i.ibb.co/NdnBKt79/Screenshot-2025-01-29-204542.png" alt="Black Theme" width="800">
 
 - You can also use [Firefox Color](https://color.firefox.com/) which is an [addon](https://addons.mozilla.org/firefox/addon/firefox-color/) developed by Firefox team themselves which lets you create your own theme.
 - Customize Firefox using CSS! You can make Firefox look like Chrome with [Material Fox Updated](https://github.com/edelvarden/material-fox-updated) or even the trending ARC browser with [Arc UI](https://github.com/dxdotdev/arc-ui). Check out these resources to know about Firefox-CSS:

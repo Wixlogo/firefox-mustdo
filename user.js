@@ -245,11 +245,6 @@ user_pref("general.smoothScroll.pages", true);
 // PREF: disable WebRTC to prevent IP leaks
 user_pref("media.peerconnection.enabled", false);
 
-// PREF: set homepage and new windows to a blank page
-user_pref("browser.startup.homepage", "about:blank");
-user_pref("browser.newtabpage.enabled", false);
-user_pref("browser.newtab.preload", false);
-
 // PREF: disable sidebar
 user_pref("sidebar.revamp", false);
 

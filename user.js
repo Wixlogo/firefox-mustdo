@@ -251,6 +251,9 @@ user_pref("sidebar.revamp", false);
 // PREF: double-click to close browser tabs
 user_pref("browser.tabs.closeTabByDblclick", true);
 
+// PREF: disable web search on newtab to for blank page
+user_pref("browser.newtabpage.activity-stream.showSearch", false);
+
 // ****************************************************************************
 
 // Thanks to yokoffing for Betterfox!

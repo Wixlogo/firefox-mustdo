@@ -252,6 +252,9 @@ user_pref("browser.tabs.closeTabByDblclick", true);
 // PREF: disable web search on newtab to for blank page
 user_pref("browser.newtabpage.activity-stream.showSearch", false);
 
+// PREF: Enable Safe Browsing for downloads
+user_pref("browser.safebrowsing.downloads.remote.enabled", true);
+
 // ****************************************************************************
 
 // Thanks to yokoffing for Betterfox!

@@ -2,7 +2,8 @@
 Essential tweaks, settings, and tools to optimize Firefox for usability, privacy, and customization.
 > Note: This setup prioritizes usability and convenience while maintaining privacy. 
 > For maximum privacy or anonymity, consider [Mulvad Browser](https://mullvad.net/en/browser) or the [Tor Browser](https://www.torproject.org/).  
-> A well-configured Firefox `<` dedicated privacy Firefox folks in *terms of privacy*.
+> A well-configured Firefox `<` dedicated privacy Firefox folks in *terms of privacy*.  
+> This guide (or honestly any guide) can’t fix the [security concerns of Gecko/Firefox](https://madaidans-insecurities.github.io/firefox-chromium.html).
 ## Install Firefox
 Visit the [Firefox Website](https://www.mozilla.org/en-US/firefox/new/) and hit the big blue download button.
 
@@ -49,12 +50,12 @@ Firefox might already be preinstalled on your Linux distro. If not, run these co
    sudo pacman -S firefox
    ```
 
-4. **Flatpak (Universal Package Manager)**:   
+4. **Flatpak- Universal Package Manager** (*Not Recommended*):   
    ```bash
    flatpak install flathub org.mozilla.firefox
    ```
 
-  > **Note:** Firefox native packages (from your distro's repository) tend to be faster and more stable compared to Flatpak. However, Flatpak applications include sandboxing and isolation with the OS out of the box, offering additional security.  
+  > **Note:** Firefox native packages (from your distro's repository) tend to not only be faster and more stable compared to Flatpak, it's also more secure. Flatpak applications include sandboxing and isolation with the OS out of the box, offering additional security But it deliberately reduces Firefox's own default sandboxing method.  
 >  
 > For optimal protection even with native packages, I highly recommend taking the time to learn and configure [AppArmor](https://ubuntu.com/security/apparmor) or [SELinux](https://selinuxproject.org/page/Main_Page) based on your Linux distribution.  
 > Properly configuring a Mandatory Access Control (MAC) system can provide robust protection even for native packages by limiting application privileges and preventing unauthorized access.
@@ -86,6 +87,8 @@ With a `user.js` file, you don't need to set up everything manually. Simply plac
 | Disable sidebar                                 | `sidebar.revamp`, `false`                         | Restores the traditional browser layout. |
 | Double-click to close browser tabs              | `browser.tabs.closeTabByDblclick`, `true`          | Lets you close a tab by double-clicking on it, similar to Edge and some browsers. |
 | Disable Web Search on Firefox Home              | `browser.newtabpage.activity-stream.showSearch`, `false` | Removes the web search bar from the Firefox Home tab for Blank Tab. |
+| Enable Safe Browsing for downloads              | `browser.safebrowsing.downloads.remote.enabled`, `true` | Detect malicious files by comparing hashed data against a safe list, (It does not send full download information to Google). |
+
 
 ### Steps
 1. Download the `user.js` file from [here](https://raw.githubusercontent.com/Wixlogo/firefox-mustdo/refs/heads/main/user.js) (Right click > `Save Page As…`).

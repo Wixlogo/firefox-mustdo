@@ -57,7 +57,7 @@ Firefox might already be preinstalled on your Linux distro. If not, run these co
 
   > **Note:** Firefox native packages (from your distro's repository) tend to not only be faster and more stable compared to Flatpak, it's also more secure. Flatpak applications include sandboxing and isolation with the OS out of the box, offering additional security But it deliberately reduces Firefox's own default sandboxing method.  
 >  
-> For optimal protection even with native packages, I highly recommend taking the time to learn and configure [AppArmor](https://ubuntu.com/security/apparmor) or [SELinux](https://selinuxproject.org/page/Main_Page) based on your Linux distribution.  
+> For optimal protection even with native packages, I highly recommend taking the time to learn and configure [AppArmor](https://documentation.ubuntu.com/server/how-to/security/apparmor/) or [SELinux](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html/using_selinux/index) based on your Linux distribution.  
 > Properly configuring a Mandatory Access Control (MAC) system can provide robust protection even for native packages by limiting application privileges and preventing unauthorized access.
 
 ## Setting everything up with User.js

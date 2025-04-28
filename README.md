@@ -87,8 +87,6 @@ With a `user.js` file, you don't need to set up everything manually. Simply plac
 | Disable sidebar                                 | `sidebar.revamp`, `false`                         | Restores the traditional browser layout. |
 | Double-click to close browser tabs              | `browser.tabs.closeTabByDblclick`, `true`          | Lets you close a tab by double-clicking on it, similar to Edge and some browsers. |
 | Disable Web Search on Firefox Home              | `browser.newtabpage.activity-stream.showSearch`, `false` | Removes the web search bar from the Firefox Home tab for Blank Tab. |
-| Enable Safe Browsing for downloads              | `browser.safebrowsing.downloads.remote.enabled`, `true` | Detect malicious files by comparing hashed data against a safe list, (It does not send full download information to Google). |
-
 
 ### Steps
 1. Download the `user.js` file from [here](https://raw.githubusercontent.com/Wixlogo/firefox-mustdo/refs/heads/main/user.js) (Right click > `Save Page As…`).
@@ -136,12 +134,12 @@ Here are some must-have add-ons to enhance your Firefox experience:
 - **[Firefox Multi-Account Containers](https://addons.mozilla.org/firefox/addon/multi-account-containers/)**  
   Create separate cookie sessions for different websites within the same browser window.
 
-- **[Cookie AutoDelete](https://addons.mozilla.org/firefox/addon/cookie-autodelete/)**  
-  Automatically deletes unused cookies and other site data unless you whitelist specific sites.  
-  Alternative: **[Temporary Containers](https://addons.mozilla.org/en-US/firefox/addon/temporary-containers/)**.
-
-- **[Windscribe VPN](https://addons.mozilla.org/en-US/firefox/addon/windscribe/)**  
-  A pretty good no-logs VPN with free 2GB/month if you enter your email and 10GB/month if you verify your email. [My referral link](https://windscribe.com/yo/40sycx18).
+- VPN
+   - **[Windscribe VPN](https://addons.mozilla.org/en-US/firefox/addon/windscribe/)**  
+     No-logs VPN with free 2GB/month if you enter your email and 10GB/month if you verify your email. [My referral link](https://windscribe.com/yo/40sycx18).  
+   **OR**  
+  - **[Proton VPN](https://addons.mozilla.org/en-US/firefox/addon/proton-vpn-firefox-extension/)**   
+      No-log Unlimited VPN, Servers are selected randomly. 
 
 - **[Bitwarden](https://addons.mozilla.org/en-US/firefox/addon/bitwarden-password-manager/)**  
   A free, cross-platform password manager.
@@ -156,6 +154,6 @@ Here are some must-have add-ons to enhance your Firefox experience:
   View deleted, 404 pages, or archived and cached versions of a website, can be used to access old or unavailable website/content.
 
 ---
-For any query/suggestions/recommendations DM me on discord `wixlogo`
+For any query/suggestions/recommendations create an issue or DM me on Discord `wixlogo`
 
 

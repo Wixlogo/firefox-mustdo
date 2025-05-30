@@ -63,7 +63,7 @@ Firefox might already be preinstalled on your Linux distro. If not, run these co
 ## Setting everything up with User.js
 With a `user.js` file, you don't need to set up everything manually. Simply place the `user.js` file containing your settings into the Firefox root directory, restart Firefox, and all configurations will be applied automatically.
 
-[Betterfox](https://github.com/yokoffing/Betterfox) is one of the most popular and well-configured `user.js` files. I recommend using my modified `user.js` file, as it is built upon the solid Betterfox foundation, offering additional [tweaks](https://github.com/yokoffing/Betterfox/wiki/Common-Overrides) and [hardening](https://github.com/yokoffing/Betterfox/wiki/Optional-Hardening) which include:  
+[Betterfox](https://github.com/yokoffing/Betterfox) is one of the most popular and well-configured `user.js` files. I recommend using [my](https://github.com/Wixlogo/firefox-mustdo/blob/main/user.js) modified `user.js` file, as it is built upon the solid Betterfox foundation, offering additional [tweaks](https://github.com/yokoffing/Betterfox/wiki/Common-Overrides) and [hardening](https://github.com/yokoffing/Betterfox/wiki/Optional-Hardening) which include:  
 
 
 | **Description**                                 | **Preference**                                      | **Reason**                                                                 |

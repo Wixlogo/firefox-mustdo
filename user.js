@@ -242,6 +242,37 @@ user_pref("browser.tabs.closeTabByDblclick", true);
 // PREF: disable web search on newtab to for blank page
 user_pref("browser.newtabpage.activity-stream.showSearch", false);
 
+// Disable preconnect and speculative connections
+user_pref("network.preconnect", false);
+user_pref("network.http.speculative-parallel-limit", 0);
+
+// PREF: disable Just Just-in-time (JIT Compilation) https://microsoftedge.github.io/edgevr/posts/Super-Duper-Secure-Mode
+user_pref("javascript.options.baselinejit", false);              // disable baseline JIT
+user_pref("javascript.options.ion", false);                      // disable IonMonkey JIT
+user_pref("javascript.options.jithints", false);                 // disable JIT hints
+user_pref("javascript.options.main_process_disable_jit", true);  // disable JIT in main process
+user_pref("javascript.options.native_regexp", false);            // disable native RegExp JIT
+user_pref("javascript.options.wasm_baselinejit", false);         // disable wasm JIT
+user_pref("javascript.options.jit_trustedprincipals", false);    // disable JIT for privileged pages
+
+// PREF: hardern strict SSL pinning & Certificate security
+
+user_pref("security.OCSP.enabled", 1);
+user_pref("security.OCSP.require", true);
+user_pref("security.certerrors.permanentOverride", false);
+user_pref("security.ssl.require_safe_negotiation", true);
+user_pref("security.pki.certificate_transparency.mode", 2);
+user_pref("security.enterprise_roots.enabled", false);
+user_pref("security.certerrors.mitm.auto_enable_enterprise_roots", false);
+user_pref("network.http.http3.disable_when_third_party_roots_found", true);
+
+// PREF: disable weak TLS Cipher suites
+user_pref("security.ssl3.ecdhe_ecdsa_aes_128_sha", false);
+user_pref("security.ssl3.ecdhe_ecdsa_aes_256_sha", false);
+
+/// PREF: disable deprecated fakespot
+pref("toolkit.shopping.ohttpConfigURL", "");
+pref("toolkit.shopping.ohttpRelayURL", "");
 
 // ****************************************************************************
 

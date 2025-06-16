@@ -92,6 +92,8 @@ With a `user.js` file, you don't need to set up everything manually. Simply plac
 | Harden SSL Pinning & Certificate Security       | `security.OCSP.enabled`, `1`<br>`security.OCSP.require`, `true`<br>`security.certerrors.permanentOverride`, `false`<br>`security.ssl.require_safe_negotiation`, `true`<br>`security.pki.certificate_transparency.mode`, `2`<br>`security.enterprise_roots.enabled`, `false`<br>`security.certerrors.mitm.auto_enable_enterprise_roots`, `false`<br>`network.http.http3.disable_when_third_party_roots_found`, `true` | Enforces strict SSL/TLS certificate pinning, disables exceptions if any and prevents use of root CA that could MITM web traffic. |
 | Disable weak TLS cipher suites                   | `security.ssl3.ecdhe_ecdsa_aes_128_sha`, `false`<br>`security.ssl3.ecdhe_ecdsa_aes_256_sha`, `false` | Prevents use of weak TLS cipher suites to improve connection security.    |
 | Disable Deprecated Fakespot        | `toolkit.shopping.ohttpConfigURL`, `""`<br>`toolkit.shopping.ohttpRelayURL`, `""` | [Mozilla is discontinuing Fakespot](https://www.pcworld.com/article/2793228/mozilla-is-discontinuing-pocket-and-fakespot.html)           |
+| [Disable Mozilla's captive portal detection](https://support.mozilla.org/en-US/kb/captive-portal)      | `captivedetect.canonicalURL`, `""`<br>`network.captive-portal-service.enabled`, `false`<br>`network.connectivity-service.enabled`, `false` | Reduces unnecessary background connections on untrusted networks (e.g., hotel/airport login pages).  |
+
 
 
 ### Steps

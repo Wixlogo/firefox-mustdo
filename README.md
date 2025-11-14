@@ -3,7 +3,7 @@ Essential tweaks, settings, and tools to optimize Firefox for usability, privacy
 > Note: This setup prioritizes usability and convenience while maintaining privacy. 
 > For maximum privacy or anonymity, consider [Mullvad Browser](https://mullvad.net/en/browser) or the [Tor Browser](https://www.torproject.org/).  
 > A well-configured Firefox `<` dedicated privacy Firefox folks in *terms of privacy*.  
-> This guide (or honestly any guide) can’t fix the [security concerns of Gecko/Firefox](https://madaidans-insecurities.github.io/firefox-chromium.html).
+> This guide (or honestly any guide) can’t fix the [security concerns of Gecko/Firefox](https://madaidans-insecurities.github.io/firefox-chromium.html). Depending on your threat model, you might prefer [Edge with baseline policies on Windows](https://github.com/HotCakeX/Harden-Windows-Security/wiki/Edge-Browser), [Trivalent on SecureBlue](https://github.com/secureblue/Trivalent), or [Brave](https://brave.com/) overall, or even Just [Chrome](https://www.google.com/chrome/) with telemetry toggles disabled.
 ## Install Firefox
 Visit the [Firefox Website](https://www.mozilla.org/en-US/firefox/new/) and hit the big blue download button.
 

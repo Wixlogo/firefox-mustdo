@@ -246,13 +246,18 @@ user_pref("network.preconnect", false);
 user_pref("network.http.speculative-parallel-limit", 0);
 
 // PREF: disable Just Just-in-time (JIT Compilation) https://microsoftedge.github.io/edgevr/posts/Super-Duper-Secure-Mode
-user_pref("javascript.options.baselinejit", false);              // disable baseline JIT
-user_pref("javascript.options.ion", false);                      // disable IonMonkey JIT
-user_pref("javascript.options.jithints", false);                 // disable JIT hints
-user_pref("javascript.options.main_process_disable_jit", true);  // disable JIT in main process
-user_pref("javascript.options.native_regexp", false);            // disable native RegExp JIT
-user_pref("javascript.options.wasm_baselinejit", false);         // disable wasm JIT
-user_pref("javascript.options.jit_trustedprincipals", false);    // disable JIT for privileged pages
+user_pref("javascript.options.baselinejit", false);               // disable baseline JIT
+user_pref("javascript.options.ion", false);                       // disable IonMonkey JIT
+user_pref("javascript.options.jithints", false);                  // disable JIT hints
+user_pref("javascript.options.main_process_disable_jit", true);   // disable JIT in main process
+user_pref("javascript.options.native_regexp", false);             // disable native RegExp JIT
+user_pref("javascript.options.jit_trustedprincipals", false);     // disable JIT for privileged pages
+user_pref("javascript.options.wasm", false);                      // disable WebAssembly entirely
+user_pref("javascript.options.wasm_baselinejit", false);          // disable WASM baseline JIT
+user_pref("javascript.options.wasm_optimizingjit", false);        // disable WASM optimizing JIT
+user_pref("javascript.options.wasm_trustedprincipals", false);    // disable WASM JIT for privileged pages
+user_pref("javascript.options.asmjs", false);                     // disable asm.js JIT
+user_pref("javascript.options.blinterp", false);                  // disable Blinterp (JIT-like)
 
 // PREF: hardern strict SSL pinning & Certificate security
 
@@ -281,4 +286,5 @@ user_pref("network.connectivity-service.enabled", false);
 
 // Thanks to yokoffing for Betterfox!
 // https://github.com/yokoffing/Betterfox
+
 
